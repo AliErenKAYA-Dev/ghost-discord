@@ -18,7 +18,7 @@
 
 ###### 5- We determine how your webhook will appear when sending a message.
 
-``const msg = new webhook.MessageBuilder()
+const msg = new webhook.MessageBuilder()
   .setName('Webhook Name') // Your webhook name
   .setColor('#f1e05a') // Message color
   .setTitle(newEntries[0].title) // Message Title
@@ -26,4 +26,4 @@
   .setFooter("Author: " + newEntries[0].creator + " - Datetime: " + formattedDate + " " + formattedTime) // Setting footer
   .setImage(imgSrc) // Image url
   .setURL(newEntries[0].link); // Post url
-Hook.send(msg); // We sending a message``
+Hook.send(msg); // We sending a message
