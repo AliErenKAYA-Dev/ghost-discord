@@ -35,7 +35,7 @@ const timeOut = 20000;
     .setColor('#f1e05a') // Mesajın rengi
     .setTitle(newEntries[0].title) // Mesajın başlığı
     .addField('', newEntries[0].contentSnippet.substring(0, 120) + "...") // İçeriğin özeti
-    .setFooter("Author: " + newEntries[0].creator + " - Release Time: " + formattedDate + " " + formattedTime) // Alt kısım ile ilgili ayarlar
+    .setFooter("Yazar: " + newEntries[0].creator + " - Yayın Zamanı: " + formattedDate + " " + formattedTime) // Alt kısım ile ilgili ayarlar
     .setImage(imgSrc) // Resim bağlantısı
     .setURL(newEntries[0].link); // Yazının adresi
   Hook.send(msg); // Mesaj gönderiyoruz
