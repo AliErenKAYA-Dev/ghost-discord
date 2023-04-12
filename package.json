@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rss-parser": "^3.12.0",
+    "webhook-discord": "^3.7.8"
+  }
+}
