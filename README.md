@@ -19,11 +19,8 @@
 ###### 5- We determine how your webhook will appear when sending a message.
 ``
 const msg = new webhook.MessageBuilder()
-
   .setName('Webhook Name') // Your webhook name
-  
   .setColor('#f1e05a') // Message color
-  
   .setTitle(newEntries[0].title) // Message Title
   .addField('', newEntries[0].contentSnippet.substring(0, 120) + "...") // We adding new field for short content
   .setFooter("Author: " + newEntries[0].creator + " - Datetime: " + formattedDate + " " + formattedTime) // Setting footer
