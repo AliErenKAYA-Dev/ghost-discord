@@ -1,6 +1,6 @@
 # Ghost CMS Discord Webhook
 
-##### 1- Install requirements:
+##### 1- First, install requirements for node app:
 
 <pre>
 npm i
@@ -12,25 +12,25 @@ npm i
 const Hook = new webhook.Webhook("YOUR WEBHOOK URL") // Example: https://discord.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN
 </pre>
 
-##### 3- You should add the RSS feed URL of your site.
+##### 3- You should add the RSS feed URL of your site:
 
 <pre>
 const rssUrl = "https://www.siteurl.com/rss"; // Example: https://www.ise.town/rss
 </pre>
 
-##### 4- If the written article does not contain an image, add the default image to be displayed.
+##### 4- If the written article does not contain an image, add the default image to be displayed:
 
 <pre>
 const defaultImg = 'default img url'; // Example: https://www.ise.town/content/images/2023/04/town.png
 </pre>
 
-##### 5- The time interval for checking should be entered in milliseconds.
+##### 5- The time interval for checking should be entered in milliseconds:
 
 <pre>
 const timeOut = 20000;
 </pre>
 
-##### 6- We determine how your webhook will appear when sending a message.
+##### 6- We determine how your webhook will appear when sending a message:
 <pre>
   const msg = new webhook.MessageBuilder()
     .setName('Webhook Name') // Your webhook name
@@ -43,7 +43,7 @@ const timeOut = 20000;
   Hook.send(msg); // We sending a message
 </pre>
 
-##### 5- Now we can start.
+##### 7- Now we can start node app:
 
 <pre>
 node index.js
