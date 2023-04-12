@@ -1,6 +1,6 @@
 # Ghost CMS Discord Webhook
 
-##### 1- First, install requirements for node app:
+##### 1- First, install dependencies for node app:
 
 <pre>
 npm i
