@@ -19,7 +19,7 @@ function getFeed() {
       lastSavedFeed = feed;
       setTimeout(getFeed, timeOut);
     });
-  } else { // İlk RSS isteği yapıldıysa
+  } else {
     parser.parseURL(rssUrl, async function (err, feed) {
       if (err) return console.log(err);
       console.log('Last RSS Request:', feed.title);
