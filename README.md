@@ -1,3 +1,7 @@
+# Ghost CMS Discord Webhook v2 Released
+
+https://github.com/AliErenKAYA-Dev/ghost-discord-api
+
 # Ghost CMS Discord Webhook
 
 ##### 1- First, install dependencies for node app:
